@@ -5,7 +5,8 @@
     "scripts": {
         "serve": "vue-cli-service serve",
         "build": "vue-cli-service build",
-        "lint": "vue-cli-service lint"
+        "lint": "vue-cli-service lint",
+        "upload": "node ./ali-oss-publish.js"
     },
     "dependencies": {
         "amfe-flexible": "^2.2.1",
@@ -24,8 +25,12 @@
         "@vue/cli-plugin-babel": "~5.0.0",
         "@vue/cli-plugin-eslint": "~5.0.0",
         "@vue/cli-service": "~5.0.0",
+        "ali-oss": "^6.18.0",
+        "co": "^4.6.0",
         "eslint": "^7.32.0",
         "eslint-plugin-vue": "^8.0.3",
+        "fs": "^0.0.1-security",
+        "path": "^0.12.7",
         "sass": "^1.64.2",
         "sass-loader": "^13.3.2",
         "vue-template-compiler": "^2.6.14"

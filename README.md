@@ -212,3 +212,14 @@ npm install postcss-pxtorem --save-dev
 ./utils/axios.js
 ./utils/http.js
 ```
+
+## 支持自动上传到oss功能
+```
+# 设置环境变量(可以设置成全局变量,理论上oss桶的配置是不会变的)
+NODE_YYAO_CLI_ACCESSKEY_ID=xxx
+NODE_YYAO_CLI_ACCESS_KEY_SECRET=xxxx
+NODE_YYAO_CLI_BUCKET=xxxx
+NODE_YYAO_CLI_REGION=oss-cn-chengdu
+# 执行命令,上传到oss
+yarn upload
+```
